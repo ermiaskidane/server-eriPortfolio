@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-app",
+  "version": "1.0.0",
+  "description": "backend for nodmailer ",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "ermias",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^67.0.0",
+    "nodemailer": "^6.4.17"
+  }
+}
